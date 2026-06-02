@@ -1,28 +1,36 @@
-Marketing ROI Analysis Using Simple Linear Regression
-Project Overview
+````markdown
+# Marketing ROI Analysis Using Simple Linear Regression
+
+## Project Overview
 
 This project analyzes the relationship between marketing expenditures and sales performance using Simple Linear Regression. The objective is to identify which marketing channel (TV, Radio, or Social Media) has the strongest impact on sales and provide data-driven recommendations for marketing budget allocation.
 
 The analysis follows a complete data science workflow, including data cleaning, exploratory data analysis (EDA), model development, diagnostic testing, and business interpretation.
 
-Project Objectives
-Load and clean the marketing dataset.
-Explore relationships between advertising channels and sales.
-Identify the marketing channel most strongly correlated with sales.
-Build a Simple Linear Regression model using Ordinary Least Squares (OLS).
-Validate regression assumptions through diagnostic plots.
-Interpret model outputs in a business context.
-Recommend the most effective marketing channel for future investment.
-Dataset
+## Project Objectives
+
+- Load and clean the marketing dataset.
+- Explore relationships between advertising channels and sales.
+- Identify the marketing channel most strongly correlated with sales.
+- Build a Simple Linear Regression model using Ordinary Least Squares (OLS).
+- Validate regression assumptions through diagnostic plots.
+- Interpret model outputs in a business context.
+- Recommend the most effective marketing channel for future investment.
+
+## Dataset
 
 The dataset contains the following variables:
 
-Variable	Description
-TV	TV advertising budget
-Radio	Radio advertising budget
-Social Media	Social media advertising budget
-Sales	Product sales
-Project Structure
+| Variable | Description |
+|----------|-------------|
+| TV | TV advertising budget |
+| Radio | Radio advertising budget |
+| Social Media | Social media advertising budget |
+| Sales | Product sales |
+
+## Project Structure
+
+```text
 marketing-roi-regression/
 │
 ├── data/
@@ -36,92 +44,120 @@ marketing-roi-regression/
 ├── requirements.txt
 │
 └── .gitignore
-Technologies Used
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Statsmodels
-SciPy
-Jupyter Notebook
-Installation
+````
 
-Clone the repository:
+## Technologies Used
 
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Statsmodels
+* SciPy
+* Jupyter Notebook
+
+## Installation
+
+### Clone the Repository
+
+```bash
 git clone <repository-url>
 cd marketing-roi-regression
+```
 
-Create and activate a virtual environment (optional):
+### Create and Activate a Virtual Environment (Optional)
 
+```bash
 python -m venv venv
 
 # Windows
 venv\Scripts\activate
 
-# Mac/Linux
+# macOS/Linux
 source venv/bin/activate
+```
 
-Install dependencies:
+### Install Dependencies
 
+```bash
+pip install pandas numpy matplotlib seaborn scipy statsmodels jupyter
+```
+
+Or install from the requirements file:
+
+```bash
 pip install -r requirements.txt
-Analysis Workflow
-1. Data Preparation
-Load dataset
-Inspect data types
-Handle missing values
-Verify data quality
-2. Exploratory Data Analysis
-Summary statistics
-Correlation analysis
-Scatter plots
-Pair plots
-Heatmaps
-3. Variable Selection
+```
 
-The independent variable with the highest correlation to Sales is selected as the predictor for the regression model.
+## Analysis Workflow
 
-4. Model Development
+### 1. Data Preparation
 
-An Ordinary Least Squares (OLS) Simple Linear Regression model is built using Statsmodels.
+* Load the dataset
+* Inspect data types and structure
+* Handle missing values
+* Verify data quality
 
-5. Model Validation
+### 2. Exploratory Data Analysis (EDA)
 
-Regression assumptions are evaluated through:
+* Generate summary statistics
+* Analyze correlations
+* Create scatter plots
+* Create pair plots
+* Visualize relationships using heatmaps
 
-Residual vs Fitted Plot (Linearity)
-Histogram of Residuals (Normality)
-Q-Q Plot (Normality)
-Scale-Location Plot (Homoscedasticity)
-6. Business Interpretation
+### 3. Variable Selection
 
-The model's:
+The advertising channel with the highest correlation to **Sales** is selected as the independent variable for the Simple Linear Regression model.
 
-R-squared value
-Regression coefficient
-P-value
+### 4. Model Development
 
-are interpreted to assess marketing effectiveness and return on investment (ROI).
+Build an Ordinary Least Squares (OLS) regression model using the `statsmodels` library.
 
-Key Findings
-The marketing channel with the strongest correlation to sales was selected for modeling.
-The regression model quantified the expected increase in sales associated with increased advertising spending.
-Statistical significance was evaluated using p-values.
-Diagnostic plots were used to verify model assumptions.
-Business Recommendation
+### 5. Model Validation
 
-Based on the regression analysis, marketing resources should be prioritized toward the advertising channel with the strongest statistically significant relationship to sales. This approach maximizes expected return on marketing investment and supports more efficient budget allocation.
+Evaluate regression assumptions using:
 
-Future Improvements
-Multiple Linear Regression using all marketing channels.
-Feature engineering.
-Cross-validation techniques.
-Marketing mix optimization.
-Time-series forecasting of sales performance.
-Author
+* Residual vs Fitted Plot (Linearity)
+* Histogram of Residuals (Normality)
+* Q-Q Plot (Normality)
+* Scale-Location Plot (Homoscedasticity)
 
-Kunle
+### 6. Business Interpretation
 
-License
+Interpret the following metrics:
 
-This project is for educational and portfolio purposes.
+* **R-squared** – Measures the proportion of variance explained by the model.
+* **Regression Coefficient** – Indicates the expected change in sales for a one-unit increase in advertising spend.
+* **P-value** – Determines whether the relationship is statistically significant.
+
+## Key Findings
+
+* The marketing channel with the strongest correlation to sales was selected as the predictor variable.
+* The regression model quantified the relationship between advertising spend and sales performance.
+* Statistical significance was assessed using p-values.
+* Diagnostic plots were used to validate model assumptions.
+
+## Business Recommendation
+
+Based on the regression results, marketing resources should be allocated toward the advertising channel that demonstrates the strongest statistically significant relationship with sales. Prioritizing investment in this channel can improve marketing ROI and support more effective budget allocation decisions.
+
+## Future Improvements
+
+* Build a Multiple Linear Regression model using all advertising channels.
+* Perform feature engineering and transformation.
+* Apply cross-validation techniques.
+* Conduct marketing mix optimization.
+* Explore sales forecasting using time-series models.
+
+## Author
+
+**Kunle**
+
+## License
+
+This project is intended for educational and portfolio purposes.
+
+```
+```

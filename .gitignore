@@ -1,0 +1,67 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook
+
+.ipynb_checkpoints/
+
+# Distribution / Packaging
+
+build/
+dist/
+*.egg-info/
+
+# IDEs
+
+.vscode/
+.idea/
+
+# macOS
+
+.DS_Store
+
+# Windows
+
+Thumbs.db
+
+# Logs
+
+*.log
+
+# Environment Variables
+
+.env
+
+# Data Files (Optional)
+
+# Uncomment if dataset should not be tracked
+
+# data/*.csv
+
+# Temporary Files
+
+*.tmp
+*.temp
+
+# Pytest
+
+.pytest_cache/
+
+# Coverage Reports
+
+.coverage
+htmlcov/
+
+# Local Configuration
+
+*.local

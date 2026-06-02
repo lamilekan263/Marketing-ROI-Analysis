@@ -153,7 +153,7 @@ Based on the regression results, marketing resources should be allocated toward 
 
 ## Author
 
-**Kunle**
+**Ibrahim Jimoh**
 
 ## License
 
